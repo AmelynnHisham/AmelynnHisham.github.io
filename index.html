@@ -8,5 +8,30 @@
 </head>
 <body>
     <h1>Welcome to mua githube</h1>
+
+
+    <h2>Here's a minMaxAvg function!</h2>
+    <script>
+        console.clear()
+
+        function minMaxAvg(arr) {
+        let min = Math.min(...arr)
+        let max = Math.max(...arr)
+        
+        total = 0
+        for (let i=0; i < arr.length; i++) {
+            total+=arr[i]
+        }
+        let avg = total / arr.length
+        
+        document.write('The numbers are ' + arr + '.<br>')
+        document.write('Min number is ' + min + '.<br>')
+        document.write('Max number is ' + max + '.<br>')
+        document.write('Average number is ' + avg + '.')
+        }
+
+        minMaxAvg([15, 4, 6, 2, 13])
+
+    </script>
 </body>
 </html>
